@@ -77,7 +77,7 @@ function Hero({ countdown }) {
           </div>
 
           {/* Countdown sticker */}
-          <div style={{
+          <div className="hero-countdown" style={{
             position: 'absolute', bottom: -18, left: -28,
             transform: 'rotate(-6deg)',
           }}>

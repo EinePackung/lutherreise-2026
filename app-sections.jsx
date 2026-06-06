@@ -38,7 +38,7 @@ function Programm() {
       </div>
 
       {/* Day card */}
-      <div style={{
+      <div className="day-card" style={{
         marginTop: 22,
         background: '#FFFDF7',
         border: '1.5px solid rgba(107,68,35,0.2)',
@@ -118,7 +118,7 @@ function Programm() {
                 {item.dienste && (
                   <div style={{ marginTop: 9, display: 'flex', flexWrap: 'wrap', gap: 7 }}>
                     {item.dienste.map((d, k) => (
-                      <span key={k} style={{
+                      <span key={k} className="dienst-chip" style={{
                         display: 'inline-flex', alignItems: 'baseline', gap: 6,
                         padding: '3px 11px', borderRadius: 999,
                         background: 'rgba(127,161,119,0.12)',
@@ -127,7 +127,7 @@ function Programm() {
                         <span className="t-typewriter" style={{ fontSize: 10, letterSpacing: '0.07em', color: 'var(--sage-deep)', textTransform: 'uppercase' }}>
                           {d.rolle}
                         </span>
-                        <span className="t-body" style={{ fontSize: 13, fontWeight: 600, color: 'var(--brown-deep)' }}>
+                        <span className="t-body" style={{ fontSize: 13, fontWeight: 600, color: 'var(--brown-deep)', whiteSpace: 'nowrap' }}>
                           {d.wer}
                         </span>
                       </span>
