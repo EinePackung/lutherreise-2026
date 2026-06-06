@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lutherreise 2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- 1. 공통 컴포넌트 (Tape, Stempel, useCountdown 등) -->
+  <script type="text/babel" src="components.jsx?v=10"></script>
+  <!-- 2. 커버 일러스트 -->
+  <script type="text/babel" src="cover-illustration.jsx?v=14"></script>
+  <!-- 3. 데이터 -->
+  <script type="text/babel" src="data.jsx?v=21"></script>
+  <!-- 4. Hero, ReiseMap, SectionTitle -->
+  <script type="text/babel" src="app-hero.jsx?v=15"></script>
+  <!-- 5. 인터랙티브 지도 (Wartburg & Wittenberg) -->
+  <script type="text/babel" src="app-maps.jsx?v=26"></script>
+  <!-- 6. Programm, Packliste, RSVP, Footer -->
+  <script type="text/babel" src="app-sections.jsx?v=20"></script>
+
+  <!-- 7. 앱 진입점 -->
+  <script type="text/babel">
+    const { useState: useStateApp, useEffect: useEffectApp } = React;
+
+    function App() {
+      const countdown = window.useCountdown('2026-06-11T07:00:00');
+
+      return (
+        <div className="paper" style={{ minHeight: '100vh', color: 'var(--ink)' }}>
+          <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+            <Hero countdown={countdown} />
+            <ReiseMap />
+            <Programm />
+            <Gruppen />
+            <Dienstplan />
+            <Packliste />
+            <RSVP />
+            <FooterStrip />
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>

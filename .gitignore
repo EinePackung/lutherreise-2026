@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Lokale Dev-Konfig & Backups (nicht deployen)
+_backup_originals/
+.claude/
+
+# Nicht zum Projekt gehörend
+FFM.html
+
+# Ungenutzte / ersetzte Bilder
+assets/cover/images (1).jpeg
+assets/stations/images (1).jpeg
+assets/stations/wittenberg-schlosskirche.jpg
+assets/stations/wittenberg-schlosskirche-foto.jpg
+assets/stations/csm_SchlosskircheWittenberg_Sonne_c_WelterbeRegion_UweWeigel_17472a4744.jpg
