@@ -473,7 +473,7 @@ function RSVP() {
     <section id="rsvp" style={{ padding: '32px 56px 56px', position: 'relative' }}>
       <SectionTitle pre="Antwort" titel="Bist Du dabei?" tape="rose" />
 
-      <div style={{
+      <div className="rsvp-grid" style={{
         marginTop: 22,
         background: '#FFFDF7',
         borderRadius: 14,

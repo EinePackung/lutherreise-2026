@@ -289,6 +289,25 @@
 .poi-chip:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(107,68,35,0.15); }
 .poi-chip[data-active="true"] { box-shadow: 0 3px 0 rgba(107,68,35,0.25); }
 
+/* Prevent any element from forcing horizontal scroll on small screens */
+html, body { overflow-x: hidden; }
+img, svg { max-width: 100%; }
+
 @media (max-width: 720px) {
   .map-grid { grid-template-columns: 1fr !important; }
+
+  /* Collapse the two-column hero into a single stacked column */
+  .hero-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .hero-sec  { padding: 44px 20px 36px !important; }
+  .hero-title { font-size: 56px !important; }
+
+  /* Collapse the RSVP two-column block */
+  .rsvp-grid { grid-template-columns: 1fr !important; }
+
+  /* Shrink the wide 56px side padding on every section for phones */
+  section { padding-left: 20px !important; padding-right: 20px !important; }
+}
+
+@media (max-width: 420px) {
+  .hero-title { font-size: 46px !important; }
 }

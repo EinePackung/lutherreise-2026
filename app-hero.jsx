@@ -5,9 +5,9 @@ const { useState: useStateW, useEffect: useEffectW } = React;
 /* ─── Hero / Cover ──────────────────────────────────────────── */
 function Hero({ countdown }) {
   return (
-    <section style={{ position: 'relative', padding: '64px 56px 56px', overflow: 'hidden' }}>
+    <section className="hero-sec" style={{ position: 'relative', padding: '64px 56px 56px', overflow: 'hidden' }}>
       {/* Tapes around the cover image */}
-      <div style={{
+      <div className="hero-grid" style={{
         display: 'grid',
         gridTemplateColumns: '1fr 0.85fr',
         gap: 48,
@@ -15,7 +15,7 @@ function Hero({ countdown }) {
       }}>
         <div style={{ position: 'relative' }}>
           <Stempel rotate={-4} color="apricot">Einladung · Berlin 2026</Stempel>
-          <h1 className="t-display" style={{
+          <h1 className="t-display hero-title" style={{
             fontSize: 92, lineHeight: 0.95, margin: '20px 0 8px',
             color: 'var(--brown-deep)', fontWeight: 500,
             letterSpacing: '-0.02em',
