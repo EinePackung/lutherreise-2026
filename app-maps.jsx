@@ -204,6 +204,27 @@ const WITTENBERG_POIS = [
         bild: 'pulpit',
         foto: WM + 'Lutherstadt Wittenberg, die Stadtkirche, Kanzel.jpg?width=480',
       },
+      {
+        titel: 'Cranach-Epitaph „Der Weinberg des Herrn"',
+        kurz: 'Gemaltes Bekenntnis von Cranach d. J. (1569).',
+        warum: 'In der Stadtkirche hängen mehrere Epitaphgemälde aus der Cranach-Werkstatt. Das bekannteste schuf Lucas Cranach der Jüngere 1569 zum Gedenken an den Theologen Paul Eber: „Der Weinberg des Herrn". Das Bild deutet das Gleichnis von den Arbeitern im Weinberg als reformatorische Streitschrift — rechts pflegen die Reformatoren (Luther, Melanchthon u. a.) den Weinberg, links verwüsten ihn die Vertreter der alten Kirche. Ein in Farbe übersetztes Bekenntnis zur Reformation.',
+        bild: 'portraits',
+        foto: WM + 'Lutherstadt Wittenberg, die Stadtkirche, Epitaph für Paul Eber.jpg?width=480',
+      },
+      {
+        titel: 'Die Orgel',
+        kurz: 'Sauer-Orgel von 1983 · 53 Register.',
+        warum: 'Die große Orgel wurde 1983 von der Orgelbaufirma Sauer (Frankfurt/Oder) erbaut und besitzt 53 Register auf drei Manualen und Pedal. Sie erinnert an ein Herzstück der Reformation: Luther maß dem gemeinsamen Gesang große Bedeutung bei und dichtete selbst zahlreiche Choräle — darunter „Ein feste Burg ist unser Gott". In St. Marien, seiner Predigtkirche, rückte das deutsche Kirchenlied erstmals mitten in den Gottesdienst.',
+        bild: 'church',
+        foto: WM + 'Lutherstadt Wittenberg, die Stadtkirche, Orgel.jpg?width=480',
+      },
+      {
+        titel: '„Judensau"-Schmähplastik & Mahnmal',
+        kurz: 'Ein dunkles Erbe — heute ein Ort des Gedenkens.',
+        warum: 'An der Südostfassade befindet sich eine „Judensau" — eine antisemitische Schmähplastik aus dem Hochmittelalter (um 1305), wie sie an mehreren mittelalterlichen Kirchen zu finden war. Sie erinnert an die lange Geschichte christlicher Judenfeindschaft, der auch Luther in seinen späten Schriften in erschreckender Weise Ausdruck gab. Seit 1988 ordnet ein Mahnmal von Wieland Schmiedel im Boden darunter das Relief bewusst ein und hält die Erinnerung an die Verfolgung der Juden wach. Kein „Kunstwerk", sondern eine Mahnung — und ein wichtiger, ehrlicher Halt für jede Führung.',
+        bild: 'church',
+        foto: WM + 'Lutherstadt Wittenberg, die Stadtkirche, Judensau-Relief.jpg?width=480',
+      },
     ],
   },
   {
