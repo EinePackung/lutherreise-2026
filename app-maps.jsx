@@ -1634,32 +1634,33 @@ function MapSection({ ort, untertitel, pois, MapComp, color = 'apricot', mapsUrl
         gridTemplateColumns: 'minmax(0, 1.6fr) minmax(260px, 1fr)',
         gap: 18,
       }} className="map-grid">
-        <div style={{
-          position: 'relative',
-          aspectRatio: '600 / 360',
-          borderRadius: 12,
-          overflow: 'hidden',
-          border: '1.5px solid rgba(107,68,35,0.25)',
-          boxShadow: '0 6px 20px rgba(107,68,35,0.1)',
-        }}>
-          <MapComp activeId={activeId} />
-          {pois.filter(p => p.kind !== 'parking').map(p => (
-            <MapPin key={p.id} poi={p} active={activeId === p.id} onClick={() => selectPoi(p.id)} />
-          ))}
+        <div>
+          <div style={{
+            position: 'relative',
+            aspectRatio: '600 / 360',
+            borderRadius: 12,
+            overflow: 'hidden',
+            border: '1.5px solid rgba(107,68,35,0.25)',
+            boxShadow: '0 6px 20px rgba(107,68,35,0.1)',
+          }}>
+            <MapComp activeId={activeId} />
+            {pois.filter(p => p.kind !== 'parking').map(p => (
+              <MapPin key={p.id} poi={p} active={activeId === p.id} onClick={() => selectPoi(p.id)} />
+            ))}
+          </div>
+          {mapsUrl && (
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 14 }}>
+              <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn-pill sage">
+                📍 Route in Google Maps öffnen
+              </a>
+            </div>
+          )}
         </div>
 
         <div>
           <PoiDetail poi={activeWithAudio} />
         </div>
       </div>
-
-      {mapsUrl && (
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16 }}>
-          <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn-pill sage">
-            📍 Route in Google Maps öffnen
-          </a>
-        </div>
-      )}
 
       {/* Quick chips below map */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14 }}>
