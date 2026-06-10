@@ -293,8 +293,8 @@ function ReiseMap() {
         <a href="guidebook.html" className="btn-pill sage">
           📖 Guidebook öffnen
         </a>
-        <span className="t-handwriting" style={{ fontSize: 18, color: 'var(--brown)', opacity: 0.78 }}>
-          Deutsch · English · 한국어 · Монгол
+        <span className="t-body" style={{ fontSize: 13.5, letterSpacing: '0.02em', color: 'var(--brown)', opacity: 0.8 }}>
+          Deutsch · English · 한국어 · Монгол · Français
         </span>
       </div>
     </section>
