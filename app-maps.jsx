@@ -259,7 +259,7 @@ const WITTENBERG_POIS = [
     ],
   },
   {
-    id: 'cranachhof', nr: 5, x: 56, y: 42,
+    id: 'cranachhof', nr: 5, x: 38, y: 64,
     titel: 'Cranach-Hof',
     untertitel: 'Cranach-Höfe · Druck und Septembertestament',
     text: 'Lucas Cranach d. Ä. war Maler, Unternehmer und enger Weggefährte Luthers. Hier wird sichtbar, wie die Reformation durch Bilder, Druck und Verlagsarbeit zu den Menschen kam.',
@@ -1164,8 +1164,8 @@ function WittenbergMap() {
         <circle cx="329" cy="168" r="2" fill={ink} />
       </g>
 
-      {/* CRANACH-HOF (POI 5) — Cranach courts near the Markt */}
-      <g>
+      {/* CRANACH-HOF (POI 5) — left of the Stadtkirche, below the Markt */}
+      <g transform="translate(-152, 65)">
         <rect x="356" y="145" width="46" height="38" fill="#FBF2E0" stroke={ink} strokeWidth="1.2" />
         <path d="M 352 145 L 379 130 L 406 145" fill="#E8A4A4" opacity="0.65" stroke={ink} strokeWidth="1" />
         <rect x="370" y="166" width="9" height="17" fill="#3D2817" />
