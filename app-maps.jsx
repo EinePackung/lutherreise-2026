@@ -1491,7 +1491,7 @@ function PoiDetail({ poi }) {
 }
 
 /* ─── MapSection — wraps map + list + detail for one location ── */
-function MapSection({ ort, untertitel, pois, MapComp, color = 'apricot' }) {
+function MapSection({ ort, untertitel, pois, MapComp, color = 'apricot', mapsUrl }) {
   const firstStation = pois.find(p => p.kind !== 'parking') || pois[0];
   const [activeId, setActiveId] = useStateM(firstStation.id);
 
@@ -1652,6 +1652,14 @@ function MapSection({ ort, untertitel, pois, MapComp, color = 'apricot' }) {
           <PoiDetail poi={activeWithAudio} />
         </div>
       </div>
+
+      {mapsUrl && (
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16 }}>
+          <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn-pill sage">
+            📍 Route in Google Maps öffnen
+          </a>
+        </div>
+      )}
 
       {/* Quick chips below map */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14 }}>
@@ -1901,6 +1909,7 @@ function WittenbergSection() {
     pois={WITTENBERG_POIS}
     MapComp={WittenbergMap}
     color="sage"
+    mapsUrl="https://maps.app.goo.gl/5c2p4uTCxx1pqEjD7"
   />;
 }
 
