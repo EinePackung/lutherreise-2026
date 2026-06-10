@@ -281,6 +281,22 @@ function ReiseMap() {
 
         </svg>
       </div>
+
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 12,
+        marginTop: 18,
+        flexWrap: 'wrap',
+      }}>
+        <a href="guidebook.html" className="btn-pill sage">
+          📖 Guidebook öffnen
+        </a>
+        <span className="t-handwriting" style={{ fontSize: 18, color: 'var(--brown)', opacity: 0.78 }}>
+          Deutsch · English · 한국어 · Монгол
+        </span>
+      </div>
     </section>
   );
 }

@@ -51,9 +51,10 @@ const TAGE = [
       { zeit: '10:30', titel: 'Schlosskirche',               note: 'Andacht zu den 95 Thesen', highlight: true },
       { zeit: '11:20', titel: 'Stadtkirche St. Marien',      note: '' },
       { zeit: '12:00', titel: 'Mittagspause',                note: 'Sandwich am Marktplatz' },
-      { zeit: '13:30', titel: 'Treffen am Marktplatz',       note: '' },
-      { zeit: '13:45', titel: 'Lutherhaus / Augusteum',      note: 'Augusteum (Lutherhaus-Sanierung)', highlight: true },
-      { zeit: '14:20', titel: 'Freizeit',                    note: 'Luther 1517 360° · Melanchthonhaus' },
+      { zeit: '13:30', titel: 'Cranach-Hof',                 note: 'Cranach-Höfe · Ort des Buchdrucks' },
+      { zeit: '14:15', titel: 'Luthereiche',                 note: 'Verbrennung der Bannandrohungsbulle', highlight: true },
+      { zeit: '14:40', titel: 'Lutherhaus / Augusteum',      note: 'Augusteum (Lutherhaus-Sanierung)', highlight: true },
+      { zeit: '15:15', titel: 'Freizeit',                    note: 'Luther 1517 360° · Melanchthonhaus' },
       { zeit: '16:00', titel: 'Abfahrt nach Berlin',         note: '' },
       { zeit: '18:30', titel: 'Abendessen',                  note: 'Putzen & Abspülen nach dem Dienstplan' },
       { zeit: '20:00', titel: 'Predigt & Gemeinschaft 2',    note: 'Sola Scriptura', highlight: true,
@@ -110,10 +111,10 @@ const ROUTE_ORDER = [0, 1, 2, 3, 4];
 
 // ── Gruppenaufteilung ─────────────────────────────────────────
 const GRUPPEN = [
-  { nr: 1, leiter: 'B. Hyunwoo',   mit: ['B. Jordy', 'S. Jieun', 'S. Eyleen', 'S. Svenja', 'S. Amin', 'S. Rohmi'] },
-  { nr: 2, leiter: 'B. Yeseok',    mit: ['B. Sihyeon', 'S. Melissa', 'S. Nomin', 'S. Yundermaa', 'S. Seogyeong'] },
-  { nr: 3, leiter: 'B. Youngwoong', mit: ['B. Marvin', 'S. Joycee', 'S. Hyunji', 'S. Pagmaa', 'S. Michelle'] },
-  { nr: 4, leiter: 'B. Poeun',     mit: ['B. Wonmin', 'B. Martin', 'S. Lena', 'S. Nayoung', 'S. Yujeong', 'S. Haneul'] },
+  { nr: 1, leiter: 'B. Hyunwoo',   mit: ['B. Jordy', 'S. Eyleen', 'S. Svenja', 'S. Rohmi', 'S. Amin', 'S. Hyunji'] },
+  { nr: 2, leiter: 'B. Yeseok',    mit: ['B. Sihyeon', 'S. Melissa', 'S. Nomin', 'S. Yundermaa', 'S. Pagmaa', 'S. Seogyeong'] },
+  { nr: 3, leiter: 'B. Youngwoong', mit: ['B. Poeun', 'S. Joycee', 'S. Xi', 'S. Jieun', 'S. Michelle', 'S. Hanna'] },
+  { nr: 4, leiter: 'B. Wonmin',    mit: ['B. Martin', 'S. Lena', 'S. Nayoung', 'S. Haneul', 'S. Yujeong'] },
 ];
 
 // ── Dienstplan ────────────────────────────────────────────────

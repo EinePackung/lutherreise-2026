@@ -221,7 +221,7 @@ const WITTENBERG_POIS = [
       {
         titel: '„Judensau"-Schmähplastik & Mahnmal',
         kurz: 'Ein dunkles Erbe — heute ein Ort des Gedenkens.',
-        warum: 'An der Südostfassade befindet sich eine „Judensau" — eine antisemitische Schmähplastik aus dem Hochmittelalter (um 1305), wie sie an mehreren mittelalterlichen Kirchen zu finden war. Sie erinnert an die lange Geschichte christlicher Judenfeindschaft, der auch Luther in seinen späten Schriften in erschreckender Weise Ausdruck gab. Seit 1988 ordnet ein Mahnmal von Wieland Schmiedel im Boden darunter das Relief bewusst ein und hält die Erinnerung an die Verfolgung der Juden wach. Kein „Kunstwerk", sondern eine Mahnung — und ein wichtiger, ehrlicher Halt für jede Führung.',
+        warum: 'An der Südostfassade befindet sich eine „Judensau" — eine antisemitische Schmähplastik aus dem Hochmittelalter, um 1305, wie sie an mehreren mittelalterlichen Kirchen zu finden war. Dieses Relief erinnert an die lange Geschichte der Judenfeindschaft innerhalb der christlichen Geschichte. Auch Luther zeigte in seinen späten Schriften eine solche Judenfeindschaft. Seit 1988 ordnet ein Mahnmal von Wieland Schmiedel im Boden darunter das Relief bewusst ein und hält die Erinnerung an die Verfolgung der Juden wach. Es ist kein bloßes „Kunstwerk", sondern eine Mahnung — und ein wichtiger, ehrlicher Halt für jede Führung.',
         bild: 'church',
         foto: WM + 'Lutherstadt Wittenberg, die Stadtkirche, Judensau-Relief.jpg?width=480',
       },
@@ -259,7 +259,69 @@ const WITTENBERG_POIS = [
     ],
   },
   {
-    id: 'panorama', nr: 5, x: 76, y: 20,
+    id: 'cranachhof', nr: 5, x: 56, y: 42,
+    titel: 'Cranach-Hof',
+    untertitel: 'Cranach-Höfe · Druck und Septembertestament',
+    text: 'Lucas Cranach d. Ä. war Maler, Unternehmer und enger Weggefährte Luthers. Hier wird sichtbar, wie die Reformation durch Bilder, Druck und Verlagsarbeit zu den Menschen kam.',
+    color: 'rose', icon: 'frame',
+    foto: WM + 'CranachHof-Markt3-4 1.JPG?width=480',
+    must: [
+      {
+        titel: 'Cranach als Medienpartner',
+        kurz: 'Porträts, Bilder, Druck und Öffentlichkeit.',
+        warum: 'Lucas Cranach prägte das Gesicht der Reformation: Er malte Luther, übersetzte reformatorische Inhalte in Bilder und war in Druck und Verlag eng eingebunden. Luther predigte und schrieb; Cranach und die Drucker halfen, diese Worte sichtbar und verbreitbar zu machen.',
+        bild: 'portraits',
+        foto: WM + 'Lucas Cranach d.Ä. - Martin Luther, 1528 (Veste Coburg).jpg?width=480',
+      },
+      {
+        titel: 'Septembertestament (1522)',
+        kurz: 'Luthers deutsches Neues Testament.',
+        warum: 'Auf der Wartburg übersetzte Luther das Neue Testament ins Deutsche; im September 1522 wurde es in Wittenberg gedruckt und verbreitet. Darum heißt es Septembertestament. Die Übersetzung brachte Gottes Wort aus der Gelehrten- und Priesterwelt in die Hände gewöhnlicher Menschen.',
+        bild: 'bible',
+        foto: WM + 'Luther Das Newe Testament Deutzsch 015 Initial.jpg?width=480',
+      },
+      {
+        titel: 'Buchdruck als Werkzeug des Evangeliums',
+        kurz: 'Nicht nur Technik, sondern Verbreitung des Wortes.',
+        warum: 'Die Reformation verbreitete sich nicht nur durch Vorlesungen und Predigten. Gedruckte Flugschriften und Bücher wirkten wie ein Mediennetz der Zeit. Gott gebrauchte Druck, Sprache und Menschen, damit das Evangelium viele Hände und Herzen erreichte.',
+        bild: 'bible',
+        foto: WM + 'Druckstube Wittenberg.jpg?width=480',
+      },
+    ],
+  },
+  {
+    id: 'luthereiche', nr: 6, x: 86, y: 66,
+    titel: 'Luthereiche ✦',
+    untertitel: '10. Dezember 1520 · öffentlicher Bruch mit Rom',
+    text: 'Die Luthereiche erinnert an den Ort, an dem Luther die päpstliche Bannandrohungsbulle und kirchliche Rechtsbücher verbrannte — ein öffentliches Bekenntnis, dass Gottes Wort über menschlicher Autorität steht.',
+    color: 'sage', highlight: true, icon: 'view',
+    foto: WM + 'Luthereiche in Wittenberg.jpg?width=480',
+    must: [
+      {
+        titel: '10. Dezember 1520',
+        kurz: 'Verbrennung der Bannandrohungsbulle.',
+        warum: 'Luther verbrannte hier die Bannandrohungsbulle Papst Leos X. und kirchliche Rechtsbücher. Das war mehr als Ärger oder Protest: Es war ein öffentliches Bekenntnis, dass päpstliche Anordnung nicht über Gottes Wort stehen kann.',
+        bild: 'pulpit',
+        foto: WM + 'Pantheon der Deutschen Luther verbrennt Bücher.jpg?width=480',
+      },
+      {
+        titel: 'Was Exkommunikation bedeutete',
+        kurz: 'Nicht bloß Ausschluss — reale Gefahr.',
+        warum: 'Eine Bannandrohung war im 16. Jahrhundert keine Kleinigkeit. Exkommunikation bedeutete den Verlust von Schutz, den Verdacht der Häresie und im Extremfall Lebensgefahr. Luther wusste, welchen Weg er betrat; seine Kühnheit kam nicht aus Furchtlosigkeit, sondern daraus, dass Gottes Wort größer war als seine Angst.',
+        bild: 'grave',
+        foto: WM + 'Raphael - Pope Leo X with two cardinals (cropped).jpg?width=480',
+      },
+      {
+        titel: 'Gewissen vor Gott',
+        kurz: 'Der Weg nach Worms beginnt sichtbar.',
+        warum: 'Die Luthereiche erinnert an den öffentlichen Bruch mit Rom. Wenn die 95 Thesen den Streit eröffneten, zeigte diese Verbrennung, dass Luther nicht mehr zurück konnte. Dieser Weg führte bald zum Reichstag zu Worms, wo er vor Kaiser und Reich bei seinem Gewissen blieb.',
+        bild: 'reichstag',
+        foto: WM + 'Anton von Werner Luther vor dem Reichstag zu Worms Entwurf 1870.jpg?width=480',
+      },
+    ],
+  },
+  {
+    id: 'panorama', nr: 7, x: 76, y: 20,
     titel: 'Luther 1517 — 360°',
     untertitel: 'Asisi Panorama · Arsenalplatz',
     text: 'Das spektakuläre 360°-Panorama von Yadegar Asisi versetzt uns mitten ins Wittenberg von 1517. Eine Zeitreise durch eine Stadt im Aufbruch!',
@@ -267,7 +329,7 @@ const WITTENBERG_POIS = [
     foto: STATION_IMG + 'wittenberg-panorama.jpg',
   },
   {
-    id: 'melanchthon', nr: 6, x: 64, y: 62,
+    id: 'melanchthon', nr: 8, x: 64, y: 62,
     titel: 'Melanchthonhaus',
     untertitel: 'Optional · Freizeit · Collegienstr. 60',
     text: 'Das Wohnhaus von Philipp Melanchthon, Luthers engstem Mitstreiter. Klein, aber wunderschön erhalten — UNESCO-Welterbe.',
@@ -1102,6 +1164,16 @@ function WittenbergMap() {
         <circle cx="329" cy="168" r="2" fill={ink} />
       </g>
 
+      {/* CRANACH-HOF (POI 5) — Cranach courts near the Markt */}
+      <g>
+        <rect x="356" y="145" width="46" height="38" fill="#FBF2E0" stroke={ink} strokeWidth="1.2" />
+        <path d="M 352 145 L 379 130 L 406 145" fill="#E8A4A4" opacity="0.65" stroke={ink} strokeWidth="1" />
+        <rect x="370" y="166" width="9" height="17" fill="#3D2817" />
+        <rect x="386" y="156" width="8" height="9" fill="#FFFBF0" stroke={ink} strokeWidth="0.6" />
+        <rect x="360" y="156" width="8" height="9" fill="#FFFBF0" stroke={ink} strokeWidth="0.6" />
+        <text x="379" y="198" textAnchor="middle" fontSize="7.5" fill={ink} fontFamily="monospace" letterSpacing="0.4">Cranach-Hof</text>
+      </g>
+
       {/* STADTKIRCHE (POI 3) — twin towers, just south of marketplace */}
       <g>
         <rect x="280" y="225" width="50" height="38" fill="#FBF2E0" stroke={ink} strokeWidth="1.5" />
@@ -1128,7 +1200,17 @@ function WittenbergMap() {
         <rect x="462" y="190" width="8" height="14" fill="#3D2817" />
       </g>
 
-      {/* PANORAMA (POI 5) — Arsenalplatz, north of Lutherhaus */}
+      {/* LUTHEREICHE (POI 6) — southeast of Lutherhaus */}
+      <g>
+        <circle cx="515" cy="232" r="16" fill="#7FA177" stroke={ink} strokeWidth="1" />
+        <circle cx="505" cy="229" r="10" fill="#A8C3A0" stroke={ink} strokeWidth="0.7" />
+        <circle cx="524" cy="226" r="10" fill="#A8C3A0" stroke={ink} strokeWidth="0.7" />
+        <rect x="512" y="242" width="6" height="24" fill={ink} />
+        <path d="M 499 266 Q 515 255 533 266" fill="none" stroke={ink} strokeWidth="1" opacity="0.5" />
+        <text x="515" y="282" textAnchor="middle" fontSize="7.5" fill={ink} fontFamily="monospace" letterSpacing="0.4">Luthereiche</text>
+      </g>
+
+      {/* PANORAMA (POI 7) — Arsenalplatz, north of Lutherhaus */}
       <g>
         {/* Arsenal building outline */}
         <rect x="430" y="68" width="52" height="36" fill="#FBF2E0" stroke={ink} strokeWidth="1.2" />
@@ -1143,7 +1225,7 @@ function WittenbergMap() {
         <line x1="456" y1="104" x2="456" y2="160" stroke={ink} strokeWidth="0.8" strokeDasharray="2 2" opacity="0.35" />
       </g>
 
-      {/* MELANCHTHONHAUS (POI 6) — Collegienstr. 60, between Markt and Lutherhaus */}
+      {/* MELANCHTHONHAUS (POI 8) — Collegienstr. 60, between Markt and Lutherhaus */}
       <g>
         <rect x="388" y="225" width="34" height="30" fill="#FBF2E0" stroke={ink} strokeWidth="1.5" />
         {/* stepped gable */}
