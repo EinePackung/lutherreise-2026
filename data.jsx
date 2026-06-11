@@ -111,10 +111,10 @@ const ROUTE_ORDER = [0, 1, 2, 3, 4];
 
 // ── Gruppenaufteilung ─────────────────────────────────────────
 const GRUPPEN = [
-  { nr: 1, leiter: 'B. Hyunwoo',   mit: ['B. Jordy', 'S. Eyleen', 'S. Svenja', 'S. Rohmi', 'S. Amin', 'S. Hyunji'] },
-  { nr: 2, leiter: 'B. Yeseok',    mit: ['B. Sihyeon', 'S. Melissa', 'S. Nomin', 'S. Yundermaa', 'S. Pagmaa', 'S. Seogyeong'] },
-  { nr: 3, leiter: 'B. Youngwoong', mit: ['B. Poeun', 'S. Joycee', 'S. Xi', 'S. Jieun', 'S. Michelle', 'S. Hanna'] },
-  { nr: 4, leiter: 'B. Wonmin',    mit: ['B. Martin', 'S. Lena', 'S. Nayoung', 'S. Haneul', 'S. Yujeong'] },
+  { nr: 1, leiter: 'B. Hyunwoo',   mit: ['B. Jordy', 'S. Jieun', 'S. Eyleen', 'S. Svenja', 'S. Amin', 'S. Rohmi'] },
+  { nr: 2, leiter: 'B. Yeseok',    mit: ['B. Sihyeon', 'S. Melissa', 'S. Nomin', 'S. Yundermaa', 'S. Seogyeong'] },
+  { nr: 3, leiter: 'B. Youngwoong', mit: ['S. Joycee', 'S. Hyunji', 'S. Nayoung', 'S. Pagmaa', 'S. Xi'] },
+  { nr: 4, leiter: 'B. Poeun',     mit: ['B. Wonmin', 'B. Martin', 'S. Lena', 'S. Yujeong', 'S. Haneul', 'S. Michelle', 'S. Hanna'] },
 ];
 
 // ── Dienstplan ────────────────────────────────────────────────
