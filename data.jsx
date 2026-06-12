@@ -74,9 +74,9 @@ const TAGE = [
     farbe: 'sage',
     motto: 'Gemeinschaft & Heimkehr',
     items: [
-      { zeit: '8:00',  titel: 'Ankunft & QT',                note: 'Römer Kapitel 1 (Gruppenweise)', highlight: true },
-      { zeit: '8:30',  titel: 'Frühstück',                   note: '' },
-      { zeit: '9:20',  titel: 'Aufräumen',                   note: 'Putzen nach dem Dienstplan · Gepäck · Fundsachen' },
+      { zeit: '8:30',  titel: 'Ankunft & QT',                note: 'Römer Kapitel 1 (Gruppenweise)', highlight: true },
+      { zeit: '9:00',  titel: 'Frühstück',                   note: '' },
+      { zeit: '9:30',  titel: 'Aufräumen',                   note: 'Putzen nach dem Dienstplan · Gepäck · Fundsachen' },
       { zeit: '10:00', titel: 'Gemeinschaft 3',              note: 'Vollversammlung', highlight: true,
         dienste: [
           { rolle: 'Übersetzung', wer: 'S. Yujeong / S. Melissa' },
