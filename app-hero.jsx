@@ -91,10 +91,10 @@ function Hero({ countdown }) {
               minWidth: 200,
             }}>
               <div className="t-typewriter" style={{ fontSize: 10, letterSpacing: '0.18em', opacity: 0.9 }}>
-                NOCH
+                {countdown.past ? 'SEIT START' : 'NOCH'}
               </div>
               <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', marginTop: 2 }}>
-                <CountBox n={countdown.d} label="Tage" />
+                <CountBox n={countdown.d} label="Tage" prefix={countdown.past ? '+' : ''} />
                 <CountBox n={countdown.h} label="Std" />
                 <CountBox n={countdown.m} label="Min" />
                 <CountBox n={countdown.s} label="Sek" />
@@ -107,11 +107,11 @@ function Hero({ countdown }) {
   );
 }
 
-function CountBox({ n, label }) {
+function CountBox({ n, label, prefix = '' }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <span className="t-display" style={{ fontSize: 28, fontWeight: 600, lineHeight: 1 }}>
-        {String(n).padStart(2, '0')}
+        {prefix}{String(n).padStart(2, '0')}
       </span>
       <span className="t-typewriter" style={{ fontSize: 9, opacity: 0.85, letterSpacing: '0.1em', marginTop: 2 }}>
         {label}

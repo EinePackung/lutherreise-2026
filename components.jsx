@@ -107,12 +107,14 @@ function useCountdown(targetIso) {
     const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
   }, []);
-  const diff = Math.max(0, target - now);
+  const raw = target - now;
+  const past = raw < 0;
+  const diff = Math.abs(raw);
   const d = Math.floor(diff / 86400000);
   const h = Math.floor((diff % 86400000) / 3600000);
   const m = Math.floor((diff % 3600000) / 60000);
   const s = Math.floor((diff % 60000) / 1000);
-  return { d, h, m, s, ended: diff <= 0 };
+  return { d, h, m, s, ended: raw <= 0, past };
 }
 
 /* ─── Calendar ICS Download ───────────────────────────── */
